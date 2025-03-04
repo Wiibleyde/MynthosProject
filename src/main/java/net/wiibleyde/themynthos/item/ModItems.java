@@ -14,11 +14,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
         DeferredRegister.create(ForgeRegistries.ITEMS, TheMynthos.MOD_ID);
 
-    public static final RegistryObject<Item> MYNTHOSJUICE = ITEMS.register("mynthosjuice",
-        () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthosjuice")))));
+    public static final RegistryObject<Item> MYNTHOS_JUICE = ITEMS.register("mynthos_juice",
+        () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_juice")))));
 
-    public static final RegistryObject<Item> MYNTHOSCHEESE = ITEMS.register("mynthoscheese",
-        () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthoscheese")))));
+    public static final RegistryObject<Item> MYNTHOS_CHEESE = ITEMS.register("mynthos_cheese",
+        () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_cheese")))));
 
 
 

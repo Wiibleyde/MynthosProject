@@ -20,7 +20,7 @@ import org.slf4j.Logger;
 @Mod(TheMynthos.MOD_ID)
 public class TheMynthos {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "wiibleydethemynthos";
+    public static final String MOD_ID = "wiibleyde_themynthos";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -45,8 +45,8 @@ public class TheMynthos {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.MYNTHOSJUICE);
-            event.accept(ModItems.MYNTHOSCHEESE);
+            event.accept(ModItems.MYNTHOS_JUICE);
+            event.accept(ModItems.MYNTHOS_CHEESE);
         }
     }
 

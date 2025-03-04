@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "wiibleydethemynthos:item/mynthoscheese"
+    "layer0": "wiibleyde_themynthos:item/mynthos_cheese"
   }
 }
