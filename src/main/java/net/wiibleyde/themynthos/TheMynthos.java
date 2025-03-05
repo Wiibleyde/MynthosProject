@@ -45,9 +45,9 @@ public class TheMynthos {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            LOGGER.info("Adding items to the food and drinks tab");
             event.accept(ModItems.MYNTHOS_PARADISE);
             event.accept(ModItems.MYNTHOS_CHEESE);
+            event.accept(ModItems.EMPTY_GLASS);
         }
     }
 
