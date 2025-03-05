@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUseAnimation;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 public class DrinkItems extends Item {
@@ -13,14 +14,9 @@ public class DrinkItems extends Item {
         super(properties);
     }
 
-
     @Override
-    public ItemUseAnimation getUseAnimation(ItemStack pStack) {
-        LOGGER.info("DrinkItems.getUseAnimation");
-        LOGGER.debug(pStack.toString());
-        ItemUseAnimation animation = ItemUseAnimation.DRINK;
-        LOGGER.info("Returning animation: " + animation);
-        return animation;
+    public @NotNull ItemUseAnimation getUseAnimation(@NotNull ItemStack pStack) {
+        LOGGER.info("Using drink item");
+        return ItemUseAnimation.DRINK;
     }
-
 }
