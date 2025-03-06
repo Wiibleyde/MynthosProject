@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "mynthos",
+  "key": {
+    "A": "minecraft:glass",
+    "B": "minecraft:oak_button"
+  },
+  "pattern": [
+    " B ",
+    "A A",
+    " A "
+  ],
+  "result": {
+    "id": "wiibleyde_themynthos:empty_bottle",
+    "count": 1
+  }
+}

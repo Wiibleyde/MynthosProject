@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "mynthos",
+  "key": {
+    "A": "minecraft:glass"
+  },
+  "pattern": [
+    "   ",
+    "A A",
+    "AAA"
+  ],
+  "result": {
+    "id": "wiibleyde_themynthos:empty_glass",
+    "count": 3
+  }
+}
