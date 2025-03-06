@@ -11,6 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.wiibleyde.themynthos.TheMynthos;
 import net.wiibleyde.themynthos.item.custom.MynthosJuiceItem;
+import net.wiibleyde.themynthos.item.custom.MynthosMilkItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -21,10 +22,10 @@ public class ModItems {
         () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_cheese")))));
 
     public static final RegistryObject<Item> MYNTHOS_JUICE_BOTTLE = ITEMS.register("mynthos_juice_bottle",
-            () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_juice_bottle")))));
+            () -> new MynthosMilkItem(new Item.Properties().food(ModFoodProperties.MYNTHOS_PARADISE, Consumables.DEFAULT_DRINK).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_juice_bottle")))));
 
     public static final RegistryObject<Item> MYNTHOS_MILK_BOTTLE = ITEMS.register("mynthos_milk_bottle",
-            () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_milk_bottle")))));
+            () -> new MynthosMilkItem(new Item.Properties().food(ModFoodProperties.MYNTHOS_MILK_BOTTLE, Consumables.DEFAULT_DRINK).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_milk_bottle")))));
 
     public static final RegistryObject<Item> EMPTY_GLASS = ITEMS.register("empty_glass",
             () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":empty_glass")))));
