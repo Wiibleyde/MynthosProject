@@ -20,7 +20,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MYNTHOS_PARADISE.get());
                         output.accept(ModItems.MYNTHOS_CHEESE.get());
                         output.accept(ModItems.EMPTY_GLASS.get());
+                        output.accept(ModItems.EMPTY_BOTTLE.get());
                         output.accept(ModItems.MYNTHOS_JUICE_BOTTLE.get());
+                        output.accept(ModItems.MYNTHOS_MILK_BOTTLE.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -50,6 +50,10 @@ public class TheMynthos {
             event.accept(ModItems.MYNTHOS_PARADISE);
             event.accept(ModItems.MYNTHOS_CHEESE);
             event.accept(ModItems.EMPTY_GLASS);
+            event.accept(ModItems.EMPTY_BOTTLE);
+            event.accept(ModItems.EMPTY_BOTTLE);
+            event.accept(ModItems.MYNTHOS_MILK_BOTTLE);
+            event.accept(ModItems.MYNTHOS_JUICE_BOTTLE);
         }
     }
 
