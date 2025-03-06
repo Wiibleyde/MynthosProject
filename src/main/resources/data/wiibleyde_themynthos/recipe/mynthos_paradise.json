@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "mynthos",
+  "key": {
+    "A": "wiibleyde_themynthos:mynthos_juice_bottle",
+    "B": "minecraft:sugar",
+    "C": "wiibleyde_themynthos:empty_glass"
+  },
+  "pattern": [
+    "A A",
+    " B ",
+    " C "
+  ],
+  "result": {
+    "id": "wiibleyde_themynthos:mynthos_paradise",
+    "count": 1
+  }
+}
