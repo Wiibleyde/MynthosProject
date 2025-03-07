@@ -1,6 +1,5 @@
 package net.wiibleyde.themynthos;
 
-import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -15,7 +14,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.wiibleyde.themynthos.item.ModCreativeModeTabs;
 import net.wiibleyde.themynthos.item.ModItems;
-import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TheMynthos.MOD_ID)
@@ -23,7 +21,7 @@ public class TheMynthos {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "wiibleyde_themynthos";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    // private static final Logger LOGGER = LogUtils.getLogger(); // Disabled because it's not used
 
     public TheMynthos(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
@@ -49,11 +47,12 @@ public class TheMynthos {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.MYNTHOS_PARADISE);
             event.accept(ModItems.MYNTHOS_CHEESE);
-            event.accept(ModItems.EMPTY_GLASS);
-            event.accept(ModItems.EMPTY_BOTTLE);
-            event.accept(ModItems.EMPTY_BOTTLE);
             event.accept(ModItems.MYNTHOS_MILK_BOTTLE);
             event.accept(ModItems.MYNTHOS_JUICE_BOTTLE);
+        }
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.EMPTY_GLASS);
+            event.accept(ModItems.EMPTY_BOTTLE);
         }
     }
 
