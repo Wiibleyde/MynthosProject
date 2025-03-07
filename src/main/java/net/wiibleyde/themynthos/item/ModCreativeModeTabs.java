@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.EMPTY_BOTTLE.get());
                         output.accept(ModItems.MYNTHOS_JUICE_BOTTLE.get());
                         output.accept(ModItems.MYNTHOS_MILK_BOTTLE.get());
+                        output.accept(ModItems.MYNTHOS_PUMP.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

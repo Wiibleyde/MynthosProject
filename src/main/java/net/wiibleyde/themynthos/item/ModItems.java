@@ -61,6 +61,9 @@ public class ModItems {
     public static final RegistryObject<Item> EMPTY_BOTTLE = ITEMS.register("empty_bottle",
             () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":empty_bottle")))));
 
+    public static final RegistryObject<Item> MYNTHOS_PUMP = ITEMS.register("mynthos_pump",
+            () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_pump")))));
+
     public static final RegistryObject<Item> MYNTHOS_PARADISE = ITEMS.register("mynthos_paradise",
             () -> new MynthosJuiceItem(new Item.Properties().stacksTo(16).food(ModFoodProperties.MYNTHOS_PARADISE, Consumables.DEFAULT_DRINK).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_paradise")))));
 

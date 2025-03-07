@@ -54,6 +54,9 @@ public class TheMynthos {
             event.accept(ModItems.EMPTY_GLASS);
             event.accept(ModItems.EMPTY_BOTTLE);
         }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.MYNTHOS_PUMP);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
