@@ -20,7 +20,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> MYNTHOS_CHEESE = ITEMS.register("mynthos_cheese",
-        () -> new Item(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_cheese")))));
+        () -> new Item(new Item.Properties().food(ModFoodProperties.MYNTHOS_CHEESE, Consumables.DEFAULT_FOOD).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_cheese")))));
 
     public static final RegistryObject<Item> MYNTHOS_JUICE_BOTTLE = ITEMS.register("mynthos_juice_bottle",
             () -> new MynthosJuiceBottleItem(new Item.Properties().stacksTo(16).food(ModFoodProperties.MYNTHOS_PARADISE, Consumables.DEFAULT_DRINK).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_juice_bottle")))));

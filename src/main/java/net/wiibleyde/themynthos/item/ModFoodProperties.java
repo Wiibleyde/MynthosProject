@@ -8,4 +8,7 @@ public class ModFoodProperties {
 
     public static final FoodProperties MYNTHOS_MILK_BOTTLE = new FoodProperties.Builder().alwaysEdible().nutrition(3)
             .saturationModifier(0.3F).build();
+
+    public static final FoodProperties MYNTHOS_CHEESE = new FoodProperties.Builder().alwaysEdible().nutrition(10)
+            .saturationModifier(0.9F).build();
 }
