@@ -4,7 +4,7 @@
 
 This project is a simple minecraft forge mod to add things related to the Mynthos universe (Created with Antoine Daniel).
 
-The actual pictures are placeholders and will be replaced by the final ones (those are from the [video](https://www.youtube.com/watch?v=4WP8ULTda3k) of MyFuckinMess).
+It's inspired by the [video](https://www.youtube.com/watch?v=4WP8ULTda3k) of MyFuckinMess.
 
 ## Disclaimer
 
