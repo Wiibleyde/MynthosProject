@@ -6,5 +6,9 @@
   "item.wiibleyde_themynthos.mynthos_milk_bottle": "Bouteille de lait de Mynthos",
   "item.wiibleyde_themynthos.empty_bottle": "Bouteille vide",
 
+  "item.themynthos.mynthos_milk_bottle.tooltip" : "Une bouteille de lait de Mynthos, une boisson délicieuse et rafraîchissante qui efface les effets!",
+  "item.themynthos.mynthos_juice_bottle.tooltip" : "Un délicieux jus aux notes de Mangue, de Papaye et de noix de coco!",
+  "item.themynthos.mynthos_cheese.tooltip" : "Un délicieux fromage produit à partir du lait de Mynthos!",
+
   "creativetab.themynthosmodtab.the_mynthos_mod_tab": "The Mynthos"
 }
