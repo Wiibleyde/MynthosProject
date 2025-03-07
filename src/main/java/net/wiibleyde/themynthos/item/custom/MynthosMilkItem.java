@@ -31,5 +31,4 @@ public class MynthosMilkItem extends Item {
         }
         return super.finishUsingItem(pStack, pLevel, pLivingEntity);
     }
-
 }
