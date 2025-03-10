@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "wiibleyde_themynthos:block/palm_tree_log",
+    "side": "wiibleyde_themynthos:block/palm_tree_log"
+  }
+}

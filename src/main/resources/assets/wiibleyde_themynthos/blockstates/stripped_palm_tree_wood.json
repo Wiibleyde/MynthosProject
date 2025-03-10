@@ -1,0 +1,17 @@
+{
+  "variants":{
+    "axis=x": {
+      "model": "wiibleyde_themynthos:block/stripped_palm_tree_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "wiibleyde_themynthos:block/stripped_palm_tree_wood"
+    },
+    "axis=z": {
+      "model": "wiibleyde_themynthos:block/stripped_palm_tree_wood",
+      "x": 90,
+      "y": 0
+    }
+  }
+}

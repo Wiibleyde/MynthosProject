@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.wiibleyde.themynthos.TheMynthos;
+import net.wiibleyde.themynthos.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -24,6 +25,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MYNTHOS_JUICE_BOTTLE.get());
                         output.accept(ModItems.MYNTHOS_MILK_BOTTLE.get());
                         output.accept(ModItems.MYNTHOS_PUMP.get());
+                        output.accept(ModBlocks.PALM_TREE_LOG.get());
+                        output.accept(ModBlocks.PALM_TREE_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_PALM_TREE_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_PALM_TREE_WOOD.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

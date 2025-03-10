@@ -1,0 +1,17 @@
+{
+  "variants":{
+    "axis=x": {
+      "model": "wiibleyde_themynthos:block/palm_tree_log",
+        "x": 90,
+        "y": 90
+    },
+    "axis=y": {
+      "model": "wiibleyde_themynthos:block/palm_tree_log"
+    },
+    "axis=z": {
+      "model": "wiibleyde_themynthos:block/palm_tree_log",
+        "x": 90,
+        "y": 0
+    }
+  }
+}

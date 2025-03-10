@@ -1,5 +1,6 @@
 package net.wiibleyde.themynthos;
 
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -12,8 +13,11 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.wiibleyde.themynthos.block.ModBlocks;
 import net.wiibleyde.themynthos.item.ModCreativeModeTabs;
 import net.wiibleyde.themynthos.item.ModItems;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TheMynthos.MOD_ID)
@@ -29,8 +33,11 @@ public class TheMynthos {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -57,6 +64,12 @@ public class TheMynthos {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.MYNTHOS_PUMP);
         }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.PALM_TREE_LOG);
+            event.accept(ModBlocks.PALM_TREE_WOOD);
+            event.accept(ModBlocks.STRIPPED_PALM_TREE_LOG);
+            event.accept(ModBlocks.STRIPPED_PALM_TREE_WOOD);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -70,7 +83,6 @@ public class TheMynthos {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
         }
     }
 }
