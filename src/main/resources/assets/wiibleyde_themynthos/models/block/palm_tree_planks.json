@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "wiibleyde_themynthos:block/palm_tree_planks"
+  }
+}

@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PALM_TREE_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_PALM_TREE_LOG.get());
                         output.accept(ModBlocks.STRIPPED_PALM_TREE_WOOD.get());
+                        output.accept(ModBlocks.PALM_TREE_PLANKS.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

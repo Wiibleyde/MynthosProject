@@ -69,6 +69,7 @@ public class TheMynthos {
             event.accept(ModBlocks.PALM_TREE_WOOD);
             event.accept(ModBlocks.STRIPPED_PALM_TREE_LOG);
             event.accept(ModBlocks.STRIPPED_PALM_TREE_WOOD);
+            event.accept(ModBlocks.PALM_TREE_PLANKS);
         }
     }
 

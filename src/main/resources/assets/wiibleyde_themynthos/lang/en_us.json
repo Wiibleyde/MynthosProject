@@ -6,19 +6,16 @@
   "item.wiibleyde_themynthos.mynthos_milk_bottle": "Mynthos Milk Bottle",
   "item.wiibleyde_themynthos.empty_bottle": "Empty Bottle",
   "item.wiibleyde_themynthos.mynthos_pump": "Mynthos Pump",
-  "item.wiibleyde_themynthos.palm_tree_log": "Palm Tree Log",
-  "item.wiibleyde_themynthos.palm_tree_wood": "Palm Tree Wood",
-  "item.wiibleyde_themynthos.stripped_palm_tree_log": "Stripped Palm Tree Log",
-    "item.wiibleyde_themynthos.stripped_palm_tree_wood": "Stripped Palm Tree Wood",
 
   "item.themynthos.mynthos_milk_bottle.tooltip": "A bottle of Mynthos Milk, a delicious and refreshing drink who remove effects!",
   "item.themynthos.mynthos_juice_bottle.tooltip" : "A delicious juice with notes of Mango, Papaya and Coconut!",
   "item.themynthos.mynthos_cheese.tooltip" : "A delicious cheese made from Mynthos milk!",
 
-  "block.wiibleyde_themynthos.palm_tree_log": "Palm Tree Log",
-  "block.wiibleyde_themynthos.palm_tree_wood": "Palm Tree Wood",
-  "block.wiibleyde_themynthos.stripped_palm_tree_log": "Stripped Palm Tree Log",
-  "block.wiibleyde_themynthos.stripped_palm_tree_wood": "Stripped Palm Tree Wood",
+  "item.wiibleyde_themynthos.palm_tree_log": "Palm Tree Log",
+  "item.wiibleyde_themynthos.palm_tree_wood": "Palm Tree Wood",
+  "item.wiibleyde_themynthos.stripped_palm_tree_log": "Stripped Palm Tree Log",
+  "item.wiibleyde_themynthos.stripped_palm_tree_wood": "Stripped Palm Tree Wood",
+  "item.wiibleyde_themynthos.palm_tree_planks": "Palm Tree Planks",
 
   "creativetab.themynthosmodtab.the_mynthos_mod_tab": "The Mynthos"
 }
