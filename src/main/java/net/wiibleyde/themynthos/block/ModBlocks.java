@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -30,24 +31,24 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TheMynthos.MOD_ID);
 
     public static final RegistryObject<RotatedPillarBlock> PALM_TREE_LOG = registerBlock("palm_tree_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG).sound(SoundType.WOOD).strength(0.2F, 1.0F)
                     .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TheMynthos.MOD_ID, "palm_tree_log")))));
 
     public static final RegistryObject<RotatedPillarBlock> PALM_TREE_WOOD = registerBlock("palm_tree_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).sound(SoundType.WOOD).strength(0.2F, 1.0F)
                     .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TheMynthos.MOD_ID, "palm_tree_wood")))));
 
     public static final RegistryObject<RotatedPillarBlock> STRIPPED_PALM_TREE_LOG = registerBlock("stripped_palm_tree_log",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
-                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TheMynthos.MOD_ID, "palm_tree_log")))));
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG).sound(SoundType.WOOD).strength(0.2F, 1.0F)
+                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TheMynthos.MOD_ID, "stripped_palm_tree_log")))));
 
     public static final RegistryObject<RotatedPillarBlock> STRIPPED_PALM_TREE_WOOD = registerBlock("stripped_palm_tree_wood",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)
-                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TheMynthos.MOD_ID, "palm_tree_wood")))));
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD).sound(SoundType.WOOD).strength(0.2F, 1.0F)
+                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TheMynthos.MOD_ID, "stripped_palm_tree_wood")))));
 
     public static final RegistryObject<Block> PALM_TREE_PLANKS = registerBlock("palm_tree_planks",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)
-                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TheMynthos.MOD_ID, "walnut_planks")))) {
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).sound(SoundType.WOOD).strength(0.2F, 1.0F)
+                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(TheMynthos.MOD_ID, "palm_tree_planks")))) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;

@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "mynthos",
+    "key": {
+      "A": "wiibleyde_themynthos:palm_tree_log"
+    },
+    "pattern": [
+      "   ",
+      " AA",
+      " AA"
+    ],
+    "result": {
+      "id": "wiibleyde_themynthos:palm_tree_wood",
+      "count": 4
+    }
+  }
