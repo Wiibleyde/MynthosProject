@@ -67,7 +67,6 @@ public class ModItems {
     public static final RegistryObject<Item> MYNTHOS_PARADISE = ITEMS.register("mynthos_paradise",
             () -> new MynthosJuiceItem(new Item.Properties().stacksTo(16).food(ModFoodProperties.MYNTHOS_PARADISE, Consumables.DEFAULT_DRINK).setId(ResourceKey.create(Registries.ITEM, ResourceLocation.parse(TheMynthos.MOD_ID + ":mynthos_paradise")))));
 
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

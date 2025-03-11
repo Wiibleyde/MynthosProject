@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "mynthos",
+    "ingredients": [
+      [
+        "wiibleyde_themynthos:palm_tree_wood",
+        "wiibleyde_themynthos:palm_tree_log",
+        "wiibleyde_themynthos:stripped_palm_tree_wood",
+        "wiibleyde_themynthos:stripped_palm_tree_log"
+      ]
+    ],
+    "result": {
+      "id": "wiibleyde_themynthos:palm_tree_planks",
+      "count": 4
+    }
+  }

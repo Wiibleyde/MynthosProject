@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "mynthos",
+    "pattern": [
+      "P",
+      "P"
+    ],
+    "key": {
+      "P": {
+        "item": "wiibleyde_themynthos:palm_tree_planks"
+      }
+    },
+    "result": {
+      "item": "minecraft:stick",
+      "count": 4
+    }
+  }
