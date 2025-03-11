@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/73fe01ea-a411-4e2d-8397-388adb8ccb04" />
+<p>
+  
 # MynthosProject
 
 ## Description
